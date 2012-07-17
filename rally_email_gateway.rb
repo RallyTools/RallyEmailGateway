@@ -13,14 +13,10 @@ custom_headers.vendor = 'Rally Software'
 rally_server = 'https://rally1.rallydev.com/slm'
 rally_username = 'username@domain.com'
 rally_pwd = 'mypwd'
-rally_workspace = 'Workspace 1'
-rally_project = 'Sample Project'
 
 rally = RallyRestAPI.new(:base_url => rally_server,
     :username => rally_username,
     :password => rally_pwd,
-    :workspace => rally_workspace,
-    :project => rally_project,
     :http_headers => custom_headers)
 
 #POP3 mail server settings
